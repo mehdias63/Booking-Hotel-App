@@ -2,7 +2,11 @@ import { MdLocationOn } from 'react-icons/md'
 import { HiCalendar } from 'react-icons/hi'
 import { HiSearch } from 'react-icons/hi'
 import { useState, useRef } from 'react'
-import { useNavigate, createSearchParams } from 'react-router-dom'
+import {
+	useNavigate,
+	createSearchParams,
+	useSearchParams,
+} from 'react-router-dom'
 import { HiPlus } from 'react-icons/hi'
 import { HiMinus } from 'react-icons/hi'
 import useOutsideClick from '../../hooks/useOutsideClick'
@@ -11,7 +15,10 @@ import 'react-date-range/dist/theme/default.css' // theme css file
 import { DateRange } from 'react-date-range'
 import { format } from 'date-fns'
 function Header() {
-	const [destination, setDestination] = useState('')
+	const [searchParams, setSearchParams] = useSearchParams()
+	const [destination, setDestination] = useState(
+		searchParams.get('destination') || '',
+	)
 	const [openOptions, setOpenOptions] = useState(false)
 	const [options, setOptions] = useState({
 		adult: 1,
