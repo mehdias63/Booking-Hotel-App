@@ -22,7 +22,9 @@ function Bookmark() {
 									countryCode={item.countryCode}
 								/>
 								&nbsp; <strong>{item.cityName}</strong> &nbsp;
-								<span>{item.country}</span>
+								<span className="bookmarkCountry">
+									{item.country}
+								</span>
 							</div>
 						</Link>
 					)

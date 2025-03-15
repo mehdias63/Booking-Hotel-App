@@ -7,6 +7,8 @@ import Hotels from './components/Hotels/Hotels'
 import BookmarkLayout from './components/BookmarkLayout/BookmarkLayout'
 import Bookmark from './components/Bookmark/Bookmark'
 import SingleHotel from './components/SingleHotel/SingleHotel'
+import SingleBookmark from './components/SingleBookmark/SingleBookmark'
+import AddNewBookmark from './components/AddNewBookmark/AddNewBookmark'
 import HotelsProvider from './components/context/HotelsProvider'
 import BookmarkListProvider from './components/context/BookmarkListContext'
 import { Route, Routes } from 'react-router-dom'
@@ -25,8 +27,8 @@ function App() {
 					</Route>
 					<Route path="/bookmark" element={<BookmarkLayout />}>
 						<Route index element={<Bookmark />} />
-						<Route path=":id" element={<div>single Bookmark</div>} />
-						<Route path="add" element={<div>add new bookmark</div>} />
+						<Route path=":id" element={<SingleBookmark />} />
+						<Route path="add" element={<AddNewBookmark />} />
 					</Route>
 				</Routes>
 			</HotelsProvider>
