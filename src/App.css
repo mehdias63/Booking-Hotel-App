@@ -276,18 +276,12 @@
 }
 .bookmarkItem {
 	margin-bottom: 1rem;
-	margin-top: 2rem;
 	border: 1px solid var(--text-400);
 	border-radius: 1rem;
 	padding: 1rem;
 	display: flex;
-	align-items: start;
-	justify-content: baseline;
-	gap: 3rem;
-}
-.bookmarkCountry {
-	display: block;
-	margin-left: auto;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .bookmarkList .bookmarkItem.current-bookmark {
@@ -353,7 +347,7 @@
 .formControl .flag {
 	position: absolute;
 	right: 1rem;
-	top: 55%;
+	top: 50%;
 }
 
 a.active {

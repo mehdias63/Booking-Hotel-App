@@ -1368,6 +1368,15 @@
       "longitude": "67.78003711374224",
       "host_location": "Baba Kot Pakistan",
       "id": 8
+    },
+    {
+      "cityName": "Paris",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "48.841559662831",
+      "longitude": "2.3510742187500004",
+      "host_location": "Paris France",
+      "id": 9
     }
   ]
 }
