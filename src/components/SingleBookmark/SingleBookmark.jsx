@@ -17,7 +17,7 @@ function SingleBookmark() {
 	return (
 		<div>
 			<button onClick={() => navigate(-1)} className="btn btn--back">
-				&larr; بازگشت
+				&larr; Back
 			</button>
 			<h2>{singleBookmark.cityName}</h2>
 
